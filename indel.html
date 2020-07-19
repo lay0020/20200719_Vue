@@ -63,7 +63,7 @@
 <!-- v-for= "變數 in 次數"-->
     <div id="vue4">
         <a href="#" v-for="n in 5">LINK {{ n }}</a>
-        <!-- n 可以自己取別的名字 -->
+        <!-- n 為自訂義 / 可以自己取別的名字 -->
 
     <div v-for="p in products">
         <h3>{{ p.name }}</h3>
@@ -74,6 +74,19 @@
     </div>
 
 
+<h1>互動 / 點擊事件</h1>
+<div id="vue5">
+    <!-- v-on:clock 點擊後 (執行...) -->
+    <!-- ="涵式名稱" -->
+    <!-- 語法 v-on:clock="....." -->
+    <h2 v-on:click="show">點擊標題 {{ text }}</h2>
+
+    <div>
+        啤酒 {{ count }} 箱 
+        <span v-on:click="sub">-</span> 
+        <span v-on:click="add">+</span>
+    </div>
+</div>
 
 
 

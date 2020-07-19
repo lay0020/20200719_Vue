@@ -46,3 +46,26 @@ var vue4 = new Vue ({
         ]
     }
 });
+
+//methods 定義涵式
+//涵式名稱: function() { 涵式內容 }
+
+var vue5 = new Vue({
+    el: "#vue5",
+    data : {
+        text: "",
+        count: 0
+    },
+    methods: {
+        //show 為自訂義
+        show: function() {
+            this.text = "已點擊~"
+        },
+        add: function() {
+            this.count++;
+        },
+        sub: function () {
+            this.count--;
+        }
+    }
+});
