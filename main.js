@@ -7,6 +7,17 @@ console.log("我是JS");
 var vue1 = new Vue({
     el:"#vue1",
     data: {
-        text: "Hello! this is Vue"
+        text: "Hello! this is Vue!!!!!",
+        a: 100,   //數字
+        b: 50,    //數字
+        c:"99"    //字串
+    }
+});
+
+var vue2 = new Vue({
+    el:"#vue2",
+    data:{
+        aligment: "center",
+        yahoo: "https://tw.yahoo.com/"
     }
 });
