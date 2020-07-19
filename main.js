@@ -38,12 +38,11 @@ var vue4 = new Vue ({
     data:{
         //使用陣列
         products:[
-            {name:"奶茶", price:45},
-            {name:"奶茶", price:45},
-            {name:"奶茶", price:45},
-            {name:"奶茶", price:45},
-            {name:"奶茶", price:45}
-
+            {name:"奶茶", price:30},
+            {name:"紅茶", price:20},
+            {name:"綠茶", price:20},
+            {name:"卡布奇諾", price:55},
+            {name:"美式咖啡", price:45}
         ]
-    };
+    }
 });

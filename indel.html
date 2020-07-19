@@ -7,12 +7,78 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <h1>定義渲染區域</h1>
+    <div id="vue1">
+    <!-- 語法{{ 指定內容標籤 }}  用雙大括號包住 -->
+
+        {{ text }}
+
+    <h2>  {{ text }}</h2>
+    <h3>  {{ text }}</h3>
+
+    {{a}}
+    {{b}} {{c}}
+    <!-- 數字+數字 會做數學運算 -->
+    {{ a + b }}
+    {{ a + a }}
+    <!-- 數字+字串會做串接 -->
+    {{ a + c }}
+    {{ c + c }}
+    </div>
+
+  <!--渲染區域外無作用/不能使用 -->
+  {{ text }}
+
+
+  <h1>將資料寫在屬性內</h1>
+  <div id="vue2">
+      <!-- 寫入資料到屬性 -->
+      <!-- 在屬性前添加 v-bind: -->
+      <!-- 屬性="資料名稱" -->
+      <!-- 不需要加雙大括號! -->
+
+      <!-- 語法 v-bind: 屬性="資料名稱"-->
+      <h3 v-bind:align="aligment">屬性測試</h3>
+      <a v-bind:href="yahoo">YAHOO</a>
+  </div>
+
+
+  <h1>判斷式 if </h1>
+  <!-- 判斷式 v-if="資料名稱" -->
+  <!-- 當資料 true 顯示，否則false 隱藏 -->
+<div id="vue3">
+    <p v-if="test">我式段落文字</p>
+    <div v-if="test">我是區塊</div>
+
+    <h2>活動特價</h2>
+    <a href="#" v-if="activity">特價區/點擊前往</a>
+    <!-- v-else 否則，當布林值為false 顯示元素 -->
+    <span v-else="activity">活動已結束</span>
+</div>
+
+<!-- v-else-if 可用來做產品頁面分類 -->
+
+
+<h1>迴圈 for</h1>
+<!-- v-for= "變數 in 次數"-->
+    <div id="vue4">
+        <a href="#" v-for="n in 5">LINK {{ n }}</a>
+        <!-- n 可以自己取別的名字 -->
+
+    <div v-for="p in products">
+        <h3>{{ p.name }}</h3>
+        <h4>{{ p.price }}元</h4>
+        <hr>
+    </div>
+
+    </div>
+
 
 
 
 
     <!-- Vue CDN -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
