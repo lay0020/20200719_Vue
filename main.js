@@ -80,3 +80,10 @@ var vue6 = new Vue({
         name: ""
     }
 }); 
+
+
+// 定義元件
+// ("元件名稱"，{ 樣板： "元件內容" })
+Vue.component("test-a", {
+    template: "<h2>這是測試元件</h2>"
+}) 
