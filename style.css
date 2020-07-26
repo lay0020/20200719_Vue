@@ -10,4 +10,17 @@
 h1 {
   color: darkorange;
 }
+
+#navbar nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+}
+
+#navbar nav a {
+  color: green;
+  text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */
